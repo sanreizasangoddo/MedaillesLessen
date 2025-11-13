@@ -32,7 +32,7 @@ namespace MedaillesOpdracht
                     }
                     else if (keuzeKeuken == "Kast" || keuzeKeuken == "kast")
                     {
-                     Console.WriteLine("\nJe opent de kast en vindt een oude map! (Keuken -> Gang -> Wc)");
+                     Console.WriteLine("\nJe opent de kast en vindt een oude map! (Hint: Keuken -> Gang -> Wc)");
                      
                     }
                     else
