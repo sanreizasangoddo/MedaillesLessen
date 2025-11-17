@@ -19,14 +19,38 @@ namespace MedaillesOpdracht
                 Console.WriteLine("\nHoeveel graden is het?");
                 int keuzeTemperatuur = Convert.ToInt32(Console.ReadLine());
 
-                if (keuzeTemperatuur <= 10 && keuzeWeer == "zonnig")
+                if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 10 && keuzeWeer == "zonnig")
                 {
                     Console.WriteLine("Je hebt echt wel een jas nodig vandaag.. Maar zonnebrand kan alsnog verstandig zijn!");
+                }
+                else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 10 && keuzeWeer == "regen")
+                {
+                    Console.WriteLine("Je hebt echt wel een jas nodig vandaag... Een paraplu kan ook verstandig zijn...");
+                }
+                else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 10 && keuzeWeer == "bewolkt")
+                {
+                    Console.WriteLine("Je hebt echt wel een jas nodig vandaag...");
+                }
+                else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 20 && keuzeWeer == "zonnig")
+                {
+                    Console.WriteLine("Je hebt geen jas nodig vandaag geniet lekker van de zon!");
+                }
+                else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 20 && keuzeWeer == "regen")
+                {
+                    Console.WriteLine("Je hebt geen jas nodig vandaag, maar zorg wel dat je je capuchon aan hebt voor het regen!");
+                }
+                else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 20 && keuzeWeer == "bewolkt")
+                {
+                    Console.WriteLine("Je hebt geen jas nodig vandaag, helaas kan je niet van de zon genieten vanwege de bewolking...");
+                }
+                else
+                {
+                    Console.WriteLine("\nOngeldige antwoord.");
                 }
             }
             else
             {
-                Console.WriteLine("\nOngeldige keuze");
+                Console.WriteLine("\nOngeldige antwoord.");
             }
         }
     }
