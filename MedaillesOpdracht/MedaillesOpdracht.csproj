@@ -46,6 +46,7 @@
     <Compile Include="Kamer Keuze Tekst-Game.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tips-voor-het-weer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

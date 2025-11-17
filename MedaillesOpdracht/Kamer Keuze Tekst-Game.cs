@@ -22,15 +22,15 @@ namespace MedaillesOpdracht
                     Console.WriteLine("Wat doe je? (Typ 'gang', 'tuin' of 'kast')");
                     string keuzeKeuken = Console.ReadLine().ToLower();
 
-                    if (keuzeKeuken == "Gang" || keuzeKeuken == "gang")
+                    if (keuzeKeuken == "gang")
                     {
                         huidigeLocatie = "Gang";
                     }
-                    else if (keuzeKeuken == "Tuin" || keuzeKeuken == "tuin")
+                    else if (keuzeKeuken == "tuin")
                     {
                         huidigeLocatie = "Tuin";
                     }
-                    else if (keuzeKeuken == "Kast" || keuzeKeuken == "kast")
+                    else if (keuzeKeuken == "kast")
                     {
                      Console.WriteLine("\nJe opent de kast en vindt een oude map! (Hint: Keuken -> Gang -> Wc)");
                      
@@ -46,15 +46,15 @@ namespace MedaillesOpdracht
                     Console.WriteLine("Wat doe je? (Typ 'keuken', 'woonkamer' of 'wc')");
                     string keuzeGang = Console.ReadLine().ToLower();
 
-                    if (keuzeGang == "Keuken" || keuzeGang == "keuken")
+                    if (keuzeGang == "keuken")
                     {
                         huidigeLocatie = "Keuken";
                     }
-                    else if (keuzeGang == "Woonkamer" || keuzeGang == "woonkamer")
+                    else if (keuzeGang == "woonkamer")
                     {
                         huidigeLocatie = "Woonkamer";
                     }
-                    else if (keuzeGang == "Wc" || keuzeGang == "wc" || keuzeGang == "WC")
+                    else if (keuzeGang == "wc")
                     {
                         huidigeLocatie = "Wc";
                     }
@@ -69,15 +69,15 @@ namespace MedaillesOpdracht
                     Console.WriteLine("Wat doe je? (Typ 'gang', 'balkon' of 'tafel')");
                     string keuzeWoonkamer = Console.ReadLine().ToLower();
 
-                    if (keuzeWoonkamer == "Gang" || keuzeWoonkamer == "gang")
+                    if (keuzeWoonkamer == "gang")
                     {
                         huidigeLocatie = "Gang";
                     }
-                    else if (keuzeWoonkamer == "Balkon" || keuzeWoonkamer == "balkon")
+                    else if (keuzeWoonkamer == "balkon")
                     {
                         huidigeLocatie = "Balkon";
                     }
-                    else if (keuzeWoonkamer == "Tafel" || keuzeWoonkamer == "tafel")
+                    else if (keuzeWoonkamer == "tafel")
                     {
                         Console.WriteLine("\nJe bekijkt de tafel en ziet een briefje: 'Zoek de schat in de tuin!'");
                     }
@@ -92,7 +92,7 @@ namespace MedaillesOpdracht
                     Console.WriteLine("Wat doe je? (typ 'gang')");
                     string keuzeWC = Console.ReadLine().ToLower();
 
-                    if (keuzeWC == "Gang" || keuzeWC == "gang")
+                    if (keuzeWC == "gang")
                     {
                         huidigeLocatie = "Gang";
                     }
@@ -107,11 +107,11 @@ namespace MedaillesOpdracht
                     Console.WriteLine("Wat doe je? (typ 'keuken' of 'vijver')");
                     string keuzeTuin = Console.ReadLine().ToLower();
 
-                    if (keuzeTuin == "Keuken" || keuzeTuin == "keuken")
+                    if (keuzeTuin == "keuken")
                     {
                         huidigeLocatie = "Keuken";
                     }
-                    else if (keuzeTuin == "Vijver" || keuzeTuin == "vijver")
+                    else if (keuzeTuin == "vijver")
                     {
                         Console.WriteLine("\nJe kijkt in de vijver en ziet een schat! Gefeliciteerd! Je hebt gewonnen!");
                         spelActief = false;
@@ -127,7 +127,7 @@ namespace MedaillesOpdracht
                     Console.WriteLine("Wat doe je? (Typ 'woonkamer')");
                     string keuzeBalkon = Console.ReadLine().ToLower();
 
-                    if (keuzeBalkon == "Woonkamer" || keuzeBalkon == "woonkamer")
+                    if (keuzeBalkon == "woonkamer")
                     {
                         huidigeLocatie = "Woonkamer";
                     }
