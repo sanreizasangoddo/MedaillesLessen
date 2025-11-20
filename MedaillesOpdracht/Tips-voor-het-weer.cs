@@ -29,7 +29,7 @@ namespace MedaillesOpdracht
                 }
                 else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 10 && keuzeWeer == "bewolkt")
                 {
-                    Console.WriteLine("Je hebt echt wel een jas nodig vandaag...");
+                    Console.WriteLine("Je hebt echt wel een jas nodig vandaag, het is best wel koud buiten...");
                 }
                 else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 20 && keuzeWeer == "zonnig")
                 {
