@@ -10,7 +10,7 @@ namespace MedaillesOpdracht
     {
         public void Start()
         {
-            Console.WriteLine("Hallo, wat voor weer is het?");
+            Console.WriteLine("\nHallo, wat voor weer is het?");
             Console.WriteLine("(Typ 'Zonnig', 'regen' of 'bewolkt')");
             string keuzeWeer = Console.ReadLine().ToLower();
 
@@ -21,27 +21,27 @@ namespace MedaillesOpdracht
 
                 if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 10 && keuzeWeer == "zonnig")
                 {
-                    Console.WriteLine("Je hebt echt wel een jas nodig vandaag.. Maar zonnebrand kan alsnog verstandig zijn!");
+                    Console.WriteLine("\nJe hebt echt wel een jas nodig vandaag.. Maar zonnebrand kan alsnog verstandig zijn!");
                 }
                 else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 10 && keuzeWeer == "regen")
                 {
-                    Console.WriteLine("Je hebt echt wel een jas nodig vandaag... Een paraplu kan ook verstandig zijn...");
+                    Console.WriteLine("\nJe hebt echt wel een jas nodig vandaag... Een paraplu kan ook verstandig zijn...");
                 }
                 else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 10 && keuzeWeer == "bewolkt")
                 {
-                    Console.WriteLine("Je hebt echt wel een jas nodig vandaag, het is best wel koud buiten...");
+                    Console.WriteLine("\nJe hebt echt wel een jas nodig vandaag, het is best wel koud buiten...");
                 }
                 else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 20 && keuzeWeer == "zonnig")
                 {
-                    Console.WriteLine("Je hebt geen jas nodig vandaag geniet lekker van de zon!");
+                    Console.WriteLine("\nJe hebt geen jas nodig vandaag geniet lekker van de zon!");
                 }
                 else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 20 && keuzeWeer == "regen")
                 {
-                    Console.WriteLine("Je hebt geen jas nodig vandaag, maar zorg wel dat je je capuchon aan hebt voor het regen!");
+                    Console.WriteLine("\nJe hebt geen jas nodig vandaag, maar zorg wel dat je je capuchon aan hebt voor het regen!");
                 }
                 else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 20 && keuzeWeer == "bewolkt")
                 {
-                    Console.WriteLine("Je hebt geen jas nodig vandaag, helaas kan je niet van de zon genieten vanwege de bewolking...");
+                    Console.WriteLine("\nJe hebt geen jas nodig vandaag, helaas kan je niet van de zon genieten vanwege de bewolking...");
                 }
                 else
                 {

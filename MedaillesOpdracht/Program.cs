@@ -22,7 +22,12 @@ namespace MedaillesOpdracht
             test.Start();
             */
 
+            /*
             Tips_voor_het_weer test = new Tips_voor_het_weer();
+            test.Start();
+            */
+
+            Leeftijd_Berekenen test = new Leeftijd_Berekenen();
             test.Start();
         }
     }
