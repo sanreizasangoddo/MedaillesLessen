@@ -11,14 +11,13 @@ namespace MedaillesOpdracht
 {
     internal class OpdrachtFunctie
     {
-        /*
-        static void Main(string[] args)
+        public void Start()
         {
             Console.WriteLine(CheckIfNumberIsPositive(3));
         }
         private static bool CheckIfNumberIsPositive(int getal)
         {
             return getal > 0;
-        } */
+        }
     }
 }
