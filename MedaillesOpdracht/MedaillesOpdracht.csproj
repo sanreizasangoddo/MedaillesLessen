@@ -46,6 +46,7 @@
     <Compile Include="Kamer Keuze Tekst-Game.cs" />
     <Compile Include="Leeftijd_Berekenen.cs" />
     <Compile Include="List.cs" />
+    <Compile Include="Loops.cs" />
     <Compile Include="Opdracht_Functie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

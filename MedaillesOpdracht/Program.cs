@@ -15,19 +15,20 @@ namespace MedaillesOpdracht
             string naam = Console.ReadLine();
             string leeftijd = Console.ReadLine();
             Console.WriteLine("Hoi " + naam + ", jij bent " + leeftijd + " jaar oud!");
-            */
-
+            
             /*
             Kamer_Keuze_Tekst_Game test = new Kamer_Keuze_Tekst_Game();
             test.Start();
-            */
 
             /*
             Tips_voor_het_weer test = new Tips_voor_het_weer();
             test.Start();
+            
+            Leeftijd_Berekenen test = new Leeftijd_Berekenen();
+            test.Start();
             */
 
-            Leeftijd_Berekenen test = new Leeftijd_Berekenen();
+            Loops test = new Loops();
             test.Start();
         }
     }
