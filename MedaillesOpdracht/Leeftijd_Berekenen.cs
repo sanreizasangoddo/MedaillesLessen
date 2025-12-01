@@ -48,10 +48,10 @@ namespace MedaillesOpdracht
                 Console.WriteLine("\nOngeldige antwoord.");
             } if (Jaartal >= 18)
             {
-                Console.WriteLine("Je hebt de recht om te kunnen stemmen omdat je minimaal 18 jaar oud bent!");
+                Console.WriteLine("\nJe hebt de recht om te kunnen stemmen omdat je minimaal 18 jaar oud bent!");
             } else
             {
-                Console.WriteLine("Omdat je jonger dan 18 bent, heb je nog niet de recht om te kunnen stemmen.");
+                Console.WriteLine("\nOmdat je jonger dan 18 bent, heb je nog niet de recht om te kunnen stemmen.");
             }
         }
     }

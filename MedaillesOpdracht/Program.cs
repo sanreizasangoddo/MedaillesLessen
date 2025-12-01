@@ -8,6 +8,7 @@ namespace MedaillesOpdracht
 {
     internal class Program
     {
+        private static string _playerName = "Yassir";
         static void Main(string[] args)
         {
             /*
@@ -24,11 +25,17 @@ namespace MedaillesOpdracht
 
             Loops test = new Loops();
             test.Start();
-            
 
+            Student stu = new Student("Yassir", 16, "Ouallal", "Deon");
+            stu.SayHello();
+            stu.Introduction();
+            stu.Friend();
+            
+            Leeftijd_Berekenen test = new Leeftijd_Berekenen();
+            test.Start();
             */
 
-            Leeftijd_Berekenen test = new Leeftijd_Berekenen();
+            Tafels_Generator test = new Tafels_Generator();
             test.Start();
         }
     }
