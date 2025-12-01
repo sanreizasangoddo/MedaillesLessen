@@ -13,7 +13,13 @@ namespace MedaillesOpdracht
         {
             Console.WriteLine("\nHallo! Wat is jouw geboortedatum?");
             Console.WriteLine("Kies eerst een jaartal.");
-            int keuzeJaartal = Convert.ToInt32(Console.ReadLine());
+            int keuzeJaartal;
+
+            while (!int.TryParse(Console.ReadLine(), out keuzeJaartal))
+            {
+                Console.WriteLine("\nOngeldige invoer! Vul een jaartal in.");
+            }
+
             int Jaartal = DateTime.Now.Year - keuzeJaartal;
             if (keuzeJaartal > 2026)
             {
@@ -30,7 +36,13 @@ namespace MedaillesOpdracht
                     keuzeMaand == "november" || keuzeMaand == "december")
                 {
                     Console.WriteLine("\nKies als laatste jouw geboortedag.");
-                    int keuzeDag = Convert.ToInt32(Console.ReadLine());
+                    int keuzeDag;
+
+                    while (!int.TryParse(Console.ReadLine(), out keuzeDag))
+                    {
+                        Console.WriteLine("\nOngeldige invoer! Vul een geboortedag in.");
+                    }
+
                     if (keuzeDag > 0 && keuzeDag <= 31)
                     {
                         Console.WriteLine("\nJe bent geboren in " + keuzeDag + " " + keuzeMaand + " " + keuzeJaartal + "!");

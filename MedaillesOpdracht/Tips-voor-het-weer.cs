@@ -17,7 +17,12 @@ namespace MedaillesOpdracht
             if (keuzeWeer == "zonnig" || keuzeWeer == "regen" || keuzeWeer == "bewolkt")
             {
                 Console.WriteLine("\nHoeveel graden is het?");
-                int keuzeTemperatuur = Convert.ToInt32(Console.ReadLine());
+                int keuzeTemperatuur;
+
+                while (!int.TryParse(Console.ReadLine(), out keuzeTemperatuur))
+                {
+                    Console.WriteLine("\nOngeldige invoer! Vul een nummer in.");
+                }
 
                 if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 10 && keuzeWeer == "zonnig")
                 {
@@ -31,15 +36,15 @@ namespace MedaillesOpdracht
                 {
                     Console.WriteLine("\nJe hebt echt wel een jas nodig vandaag, het is best wel koud buiten...");
                 }
-                else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 20 && keuzeWeer == "zonnig")
+                else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 25 && keuzeWeer == "zonnig")
                 {
                     Console.WriteLine("\nJe hebt geen jas nodig vandaag geniet lekker van de zon!");
                 }
-                else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 20 && keuzeWeer == "regen")
+                else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 25 && keuzeWeer == "regen")
                 {
                     Console.WriteLine("\nJe hebt geen jas nodig vandaag, maar zorg wel dat je je capuchon aan hebt voor het regen!");
                 }
-                else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 20 && keuzeWeer == "bewolkt")
+                else if (keuzeTemperatuur >= 0 && keuzeTemperatuur <= 25 && keuzeWeer == "bewolkt")
                 {
                     Console.WriteLine("\nJe hebt geen jas nodig vandaag, helaas kan je niet van de zon genieten vanwege de bewolking...");
                 }

@@ -21,12 +21,22 @@ namespace MedaillesOpdracht
             }
 
             Console.WriteLine("\nKies een tafel");
-            int keuzeTafel = Convert.ToInt32(Console.ReadLine());
+            int keuzeTafel;
+
+            while (!int.TryParse(Console.ReadLine(), out keuzeTafel))
+            {
+                Console.WriteLine("\nOngeldige invoer! Vul een nummer in.");
+            }
 
             Console.WriteLine("\nKies nu tot hoeveel jij wilt doorrekenen.");
-            int keuzeStop = Convert.ToInt32(Console.ReadLine());
+            int keuzeStop;
 
-           for (int i = 1; i <= keuzeStop; i++)
+            while (!int.TryParse(Console.ReadLine(), out keuzeStop))
+            {
+                Console.WriteLine("\nOngeldige invoer! Vul een nummer in.");
+            }
+
+            for (int i = 1; i <= keuzeStop; i++)
             {
                 Console.WriteLine($"{keuzeTafel} x {i} = {keuzeTafel * i}");
             }
