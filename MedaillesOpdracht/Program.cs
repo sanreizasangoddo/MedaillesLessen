@@ -33,9 +33,12 @@ namespace MedaillesOpdracht
             
             Leeftijd_Berekenen test = new Leeftijd_Berekenen();
             test.Start();
-            */
 
             Tafels_Generator test = new Tafels_Generator();
+            test.Start();
+            */
+
+            Leeftijd_Berekenen test = new Leeftijd_Berekenen();
             test.Start();
         }
     }
