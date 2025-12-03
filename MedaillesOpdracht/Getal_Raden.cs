@@ -10,23 +10,25 @@ namespace MedaillesOpdracht
     {
         public void Start()
         {
-            int guessnumber = 7;
             bool running = false;
-            int maxnumber = 10;
+            int maxnumber = 0;
             int attempts = 3;
 
             while (running)
             {
-                Console.WriteLine("\nRaad het getal.");
-                
-                while(!int.TryParse(Console.ReadLine(), out guessnumber))
+                if (maxnumber == 0)
                 {
-                    Console.WriteLine("\nOngeldige invoer! Vul een nummer in.");
+                    Console.WriteLine("\nRaad het getal.");
+                    maxnumber = maxnumber + 1;
                 }
-                if (guessnumber == 7)
+                int answer;
+                while (!int.TryParse(Console.ReadLine(), out answer))
                 {
-                    
+                    Console.Clear();
+                    attempts = attempts - 1;
+                    Console.WriteLine($"\nOngeldig invoer. Dit kost één poging. Pogingen over: {attempts}");
                 }
+                Console.Clear();
             }
 
          

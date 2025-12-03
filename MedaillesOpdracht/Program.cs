@@ -37,24 +37,34 @@ namespace MedaillesOpdracht
             Tafels_Generator test = new Tafels_Generator();
             test.Start();
 
-            Getal_Raden test = new Getal_Raden();
-            test.Start();
-            */
-
             bool admin = false;
             Console.WriteLine("Als je een account wil aanmaken, schrijf uw naam, alstublieft.");
             string userInput = Console.ReadLine();
             Console.Clear();
             Console.WriteLine("Typ nu uw wachtwoord in.");
             string userInputPassword = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Voer nu jouw leeftijd in alstublieft.");
+            int userInputAge;
+            while (!int.TryParse(Console.ReadLine(), out userInputAge))
+            {
+                Console.WriteLine("\nOngeldige invoer! Voer een nummer in.");
+            }
 
             if (userInput.ToLower() == "yassir")
             {
                 admin = true;
             }
 
-            User user1 = new User(userInput, userInputPassword, 16, 710569293, admin);
+            User user1 = new User(userInput, userInputPassword, userInputAge, 710569293, admin);
             user1.Login();
+
+            Getal_Raden test = new Getal_Raden();
+            test.Start();
+            */
+
+            Getal_Raden test = new Getal_Raden();
+            test.Start();
         }
     }
 }
