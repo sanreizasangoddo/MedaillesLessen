@@ -36,10 +36,25 @@ namespace MedaillesOpdracht
 
             Tafels_Generator test = new Tafels_Generator();
             test.Start();
+
+            Getal_Raden test = new Getal_Raden();
+            test.Start();
             */
 
-            Tips_voor_het_weer test = new Tips_voor_het_weer();
-            test.Start();
+            bool admin = false;
+            Console.WriteLine("Als je een account wil aanmaken, schrijf uw naam, alstublieft.");
+            string userInput = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Typ nu uw wachtwoord in.");
+            string userInputPassword = Console.ReadLine();
+
+            if (userInput.ToLower() == "yassir")
+            {
+                admin = true;
+            }
+
+            User user1 = new User(userInput, userInputPassword, 16, 710569293, admin);
+            user1.Login();
         }
     }
 }
