@@ -11,43 +11,52 @@ namespace MedaillesOpdracht
     {
         public void Start()
         {
-            int[] numberArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
-            int number = numberArray[8];
-            bool running = false;
-            int maxnumber = 20;
-            int attempts = 5;
+            int maxNumber;
+            int attempts = 0;
+            int maxAttempts = 5;
+            bool running = true;
+
+            Console.WriteLine("Voer een maximum getal in:");
+
+            while (!int.TryParse(Console.ReadLine(), out maxNumber) || maxNumber <= 0)
+            {
+                Console.WriteLine("Ongeldige invoer. Voer een geldig positief nummer in:");
+            }
+
+            Random random = new Random();
+            int number = random.Next(1, maxNumber + 1);
+
+            Console.Clear();
+            Console.WriteLine($"Raad het getal tussen 1 en {maxNumber}");
 
             while (running)
             {
-                if (maxnumber <= 20)
+                int guess;
+                attempts++;
+
+                while (!int.TryParse(Console.ReadLine(), out guess))
                 {
-                    Console.WriteLine("\nRaad het getal.");
-                    maxnumber = maxnumber + 1;
+                    Console.WriteLine("Ongeldige invoer, probeer opnieuw:");
                 }
-                int answer;
-                while (!int.TryParse(Console.ReadLine(), out answer))
+
+                if (guess == number)
                 {
-                    Console.Clear();
-                    attempts = attempts - 1;
-                    Console.WriteLine($"\nOngeldig invoer. Dit kost één poging. Pogingen over: {attempts}");
-                }
-                Console.Clear();
-                if (answer == 8)
-                {
+                    Console.WriteLine($"\nGefeliciteerd! Je hebt het getal geraden in {attempts} pogingen!");
                     running = false;
-                    Console.WriteLine("\nGefeliciteerd! Je hebt het getal geraden!");
                 }
-                else if (answer > 8)
+                else if (guess > number)
                 {
-                    Console.Clear();
-                    attempts = attempts - 1;
-                    Console.WriteLine("\nJe hebt het getal nog niet geraden, het is lager.");
+                    Console.WriteLine("Het getal is lager.");
                 }
-                else if (answer < 8)
+                else
                 {
-                    Console.Clear();
-                    attempts = attempts - 1;
-                    Console.WriteLine("\nJe hebt het getal nog niet geraden, het is hoger");
+                    Console.WriteLine("Het getal is hoger.");
+                }
+
+                if (attempts >= maxAttempts && running)
+                {
+                    Console.WriteLine($"\nGeen pogingen meer! Het getal was {number}.");
+                    running = false;
                 }
             }
         }
