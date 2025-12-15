@@ -21,7 +21,7 @@ namespace MedaillesOpdracht
             }
 
             int Jaartal = DateTime.Now.Year - keuzeJaartal;
-            if (keuzeJaartal > 2026)
+            if (keuzeJaartal >= 2026)
             {
                 Console.WriteLine("\nOngeldige antwoord. Het is nog 2025!");
             } else if (keuzeJaartal >= 1900 && keuzeJaartal < 2026)

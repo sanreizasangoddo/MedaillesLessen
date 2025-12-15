@@ -18,9 +18,9 @@ namespace MedaillesOpdracht
 
             Console.WriteLine("Voer een maximum getal in:");
 
-            while (!int.TryParse(Console.ReadLine(), out maxNumber) || maxNumber <= 0)
+            while (!int.TryParse(Console.ReadLine(), out maxNumber) || maxNumber <= 5)
             {
-                Console.WriteLine("Ongeldige invoer. Voer een geldig positief nummer in:");
+                Console.WriteLine("Ongeldige invoer. Voer een geldig nummer in:");
             }
 
             Random random = new Random();
@@ -46,11 +46,11 @@ namespace MedaillesOpdracht
                 }
                 else if (guess > number)
                 {
-                    Console.WriteLine("Het getal is lager.");
+                    Console.WriteLine($"Het getal is lager. Je hebt nog {maxAttempts - attempts} beurten over.");
                 }
                 else
                 {
-                    Console.WriteLine("Het getal is hoger.");
+                    Console.WriteLine($"Het getal is hoger. Je hebt nog {maxAttempts - attempts} beurten over.");
                 }
 
                 if (attempts >= maxAttempts && running)
