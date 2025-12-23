@@ -63,7 +63,7 @@ namespace MedaillesOpdracht
             test.Start();
             */
 
-            Getal_Raden test = new Getal_Raden();
+            Dobbelsteen_Simulatie test = new Dobbelsteen_Simulatie();
             test.Start();
         }
     }
