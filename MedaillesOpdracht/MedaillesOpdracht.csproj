@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dobbelsteen_Simulatie.cs" />
+    <Compile Include="Game_Karakter_met_Constructor.cs" />
     <Compile Include="Getal_Raden.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Kamer Keuze Tekst-Game.cs" />
