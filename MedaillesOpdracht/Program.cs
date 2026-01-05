@@ -64,9 +64,12 @@ namespace MedaillesOpdracht
 
             Dobbelsteen_Simulatie test = new Dobbelsteen_Simulatie();
             test.Start();
-            */
 
             Game_Karakter_met_Constructor test = new Game_Karakter_met_Constructor();
+            test.Start();
+            */
+
+            Dobbelsteen_Simulatie test = new Dobbelsteen_Simulatie();
             test.Start();
         }
     }
