@@ -67,9 +67,22 @@ namespace MedaillesOpdracht
 
             Game_Karakter_met_Constructor test = new Game_Karakter_met_Constructor();
             test.Start();
+            
+            List<Car> carList = new List<Car>();
+
+            Car car1 = new Car("Klep", "Mercedes", 4);
+            carList.Add(car1);
+
+            Car car2 = new Car("Seat", "Ibiza", 2);
+            carList.Add(car2);
+
+            foreach(Car car in carList)
+            {
+                car.PrintCarInfo();
+            }
             */
 
-            Dobbelsteen_Simulatie test = new Dobbelsteen_Simulatie();
+            Game_Karakter_met_Constructor test = new Game_Karakter_met_Constructor();
             test.Start();
         }
     }

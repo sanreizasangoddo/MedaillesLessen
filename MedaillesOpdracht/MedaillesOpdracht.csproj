@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Car.cs" />
     <Compile Include="Dobbelsteen_Simulatie.cs" />
     <Compile Include="Game_Karakter_met_Constructor.cs" />
     <Compile Include="Getal_Raden.cs" />
