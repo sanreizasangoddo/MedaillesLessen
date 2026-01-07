@@ -14,34 +14,34 @@ namespace MedaillesOpdracht
             Character c2 = new Character("Speler2", 10, 5);
             Character c3 = new Character("Boss", 20, 1);
 
-            List<Character> characters = new List<Character>();
-            characters.Add(c1);
-            characters.Add(c2);
-            characters.Add(c3);
+            List<Character> charList = new List<Character>();
+            charList.Add(c1);
+            charList.Add(c2);
+            charList.Add(c3);
 
-            for (int i = 0; i < characters.Count; i++)
+            for (int i = 0; i < charList.Count; i++)
             {
-                characters[i].ShowStats();
+                charList[i].ShowStats();
             }
         }
     }
 
     class Character
     {
-        public string Name;
-        public int Level;
-        public int Lives;
+        private string _name;
+        private int _level;
+        private int _lives;
 
         public Character(string name, int level, int lives)
         {
-            Name = name;
-            Level = level;
-            Lives = lives;
+            _name = name;
+            _level = level;
+            _lives = lives;
         }
 
         public void ShowStats()
         {
-            Console.WriteLine($"Naam: {Name}, Level: {Level}, Levens: {Lives}");
+            Console.WriteLine($"Naam: {_name}, Level: {_level}, Levens: {_lives}");
         }
     }
 }
