@@ -82,7 +82,7 @@ namespace MedaillesOpdracht
             }
             */
 
-            Game_Karakter_met_Constructor test = new Game_Karakter_met_Constructor();
+            Item_Constructor_RPG test = new Item_Constructor_RPG();
             test.Start();
         }
     }
