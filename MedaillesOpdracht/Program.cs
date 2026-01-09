@@ -8,7 +8,7 @@ namespace MedaillesOpdracht
 {
     internal class Program
     {
-        private static string _playerName = "Yassir";
+        //private static string _playerName = "Yassir";
         static void Main(string[] args)
         {
             /*
