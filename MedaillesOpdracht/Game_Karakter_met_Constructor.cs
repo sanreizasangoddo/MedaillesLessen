@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,19 +30,21 @@ namespace MedaillesOpdracht
     class Character
     {
         private string _name;
-        private int _level;
+        private int _lvl;
         private int _lives;
 
         public Character(string name, int level, int lives)
         {
             _name = name;
-            _level = level;
+            _lvl = level;
             _lives = lives;
         }
 
         public void ShowStats()
         {
-            Console.WriteLine($"Naam: {_name}, Level: {_level}, Levens: {_lives}");
+            Console.WriteLine($"\nName: {_name}");
+            Console.WriteLine($"Level: {_lvl}");
+            Console.WriteLine($"Lives: {_lives}");
         }
     }
 }
