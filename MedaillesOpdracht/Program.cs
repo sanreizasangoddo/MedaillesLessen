@@ -80,9 +80,12 @@ namespace MedaillesOpdracht
             {
                 car.PrintCarInfo();
             }
-            */
 
             Item_Constructor_RPG test = new Item_Constructor_RPG();
+            test.Start();
+            */
+
+            Getal_Raden test = new Getal_Raden();
             test.Start();
         }
     }

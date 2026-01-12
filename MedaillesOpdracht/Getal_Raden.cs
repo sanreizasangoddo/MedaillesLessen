@@ -18,7 +18,7 @@ namespace MedaillesOpdracht
 
             Console.WriteLine("Voer een maximum getal in:");
 
-            while (!int.TryParse(Console.ReadLine(), out maxNumber) || maxNumber <= 5)
+            while (!int.TryParse(Console.ReadLine(), out maxNumber) || maxNumber <= 10)
             {
                 Console.WriteLine("Ongeldige invoer. Voer een geldig nummer in:");
             }
@@ -37,6 +37,7 @@ namespace MedaillesOpdracht
                 while (!int.TryParse(Console.ReadLine(), out guess))
                 {
                     Console.WriteLine("Ongeldige invoer, probeer opnieuw:");
+                    continue;
                 }
 
                 if (guess == number)
