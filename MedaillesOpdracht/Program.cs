@@ -85,7 +85,7 @@ namespace MedaillesOpdracht
             test.Start();
             */
 
-            Game_Karakter_met_Constructor test = new Game_Karakter_met_Constructor();
+            Getal_Raden test = new Getal_Raden();
             test.Start();
         }
     }
